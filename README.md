@@ -19,7 +19,7 @@ centers of the cylinders is precisely controlled, and the top of the bar is para
 centers of the two rollers as shown in Fig. 1.
 
 <div align="center">
-<img class="img-fluid"  src="./images/bar.png" alt=""><br>           
+<img class="img-fluid"  src="experiment/images/bar.png" alt=""><br>           
 </div>
 
 The dimension between the two rollers is chosen to be a whole number (for ease of later 
