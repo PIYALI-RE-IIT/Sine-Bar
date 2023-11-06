@@ -8,16 +8,17 @@
 
 **Steps to perform the simuation**
 
-1. The experiment began with selecting the surface plate as the datum surface.
+1. At first choose the test object position on Sinebar to either left or right side from the given dropdown button.
 
-2. The component, whose angle required evaluation, was securely affixed to the sine bar, and both were positioned on the surface plate.
+<div align="center">
+<img class="img-fluid"  src="./images/plant_scth.png" alt=""><br>           
+</div>
 
-3. The sine bar and the component were positioned at an approximate angle by introducing a known-size slip gauge at one end of the sine bar, aligning the tapered side of the component with the surface plate. The complete contact between the slip gauge was done by wringing. Wringing is done by hand by sliding and twisting motions.  One gauge is placed perpendicular to the other using standard gauging pressure, and then a rotary motion is applied until the blocks are lined up.  In this way air is expelled from between the gauge faces, causing the blocks to adhere.
+2. Add height(H) or slipgauge to make the hypotenuse side of the object parallel to the plane (brown plane).
+Add the heights through the given ranger slider slowly. When it seems to be parallel with brown plane (when H &thickapprox; 63.5),
+click on 'Calibrate' button. The dial gauge will show 0 deflection exactly.
 
-4. A dial gauge, affixed to a suitable stand, was situated adjacent to the sine bar to ensure the plunger glided smoothly along the component's surface. The dial gauge was calibrated to zero at one end.
+3. Click on 'Table' at the bottom of the page to see the observation table and click on 'Add to Table' button to fill the observation table.
 
-5. The same dial gauge was moved over its surface from one end to another and the deflection reading was recorded. The height of the slip gauges beneath the one end of sine bar was adjusted until the dial gauge indicated zero deflection over the entire workpiece surface. 
-
-6. The taper angle of the component was subsequently determined using the prescribed formula.
-
-  
+4. Click on 'Clear' button to erase the observation data. Click on 'Table' button to hide the observation table.
+Change the position of the test object to other side of the Sinebar and measure the angle following the steps 2-4.
