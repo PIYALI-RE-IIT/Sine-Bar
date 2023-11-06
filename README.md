@@ -16,7 +16,7 @@
 A sine bar is a tool used to measure angles in metalworking. It consists of a hardened, precision 
 ground body with two precision ground cylinders fixed at the ends. The distance between the 
 centers of the cylinders is precisely controlled, and the top of the bar is parallel to a line through the 
-centers of the two rollers as shown in Fig. 1.
+centers of the two rollers as shown in Fig. 1
 
 <div align="center">
 <img class="img-fluid"  src="experiment/images/bar.png" alt=""><br>           
