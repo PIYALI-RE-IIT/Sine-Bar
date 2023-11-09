@@ -123,20 +123,30 @@
             <p class="text-center bg-success"> <a class="nav-link" data-bs-toggle="tab"  id="instcontrol" style="background-color:#128BD9"  ><span class=" h3 text-dark"> Instructions </span></a>
               <div id="inst" style="display:none">
 			  <ol>
-                
-					  <li>
-					  At first choose the object position on Sinebar to either left or right side from the given dropdown button.
+			  
+					<li>
+					  At first select the 'One side taper' as the test object by clicking on 'Select test object' dropdown button. 
 					  </li><br/>
 					 
 					 <li>Add height(H) or slip gauge to make the hypotenuse side of the object parallel to the plane (brown plane).
-					 Add the slip gauges of particular height(mm) from the given dropdown list. The height(H) can be increased by adding other slip gauges from the dropdown list.
-					 The total height(mm) after adding slip gauges will be shown in the input box below the dropdown list. When it seems to be parallel with brown plane (when H &thickapprox; 63.5),
+					 Add the slip gauges of particular height(mm) from the given 'Add slip gauge height(H)(mm)' dropdown list. The height(H) can be increased by adding other slip gauges from the dropdown list.
+					 The total height(mm) after adding slip gauges will be shown in the input box below the dropdown list.
+					Slip gauges can be removed by clicking on 'Remove slip gauge' button.
+					 When it seems to be parallel with brown plane (when H &thickapprox; 63.5),
 					 click on 'Calibrate' button. The dial gauge will show 0 deflection exactly.</li></br>
 
 					 <li>Click on 'Table' at the bottom of the page to see the observation table and click on 'Add to Table' button to fill the observation table.</li><br/> 
 					 
-					 <li> Click on 'Clear' button to erase the observation data. Click on 'Table' button to hide the observation table.
-						Change the position of the object to other side of the Sinebar and measure the angle following the steps 2-4.</li><br/>
+					 <li> Click on 'Clear' button to erase the observation data. Click on 'Table' button to hide the observation table.</li><br/>
+					 
+					 <li>Now select the 'V block' as the test object by clicking on 'Select test object' dropdown button.</li><br/>					 
+					 
+					 <li>Select the object position on Sinebar to either left or right side from the given 'Choose object position on sinebar' dropdown button.
+					  </li><br/>
+					  
+					 <li> Measure the angle of corresponding side by following steps 2-4.</li><br/>
+					 
+					<li>Change the position of the object to other side of the Sinebar and measure the angle following the steps 2-4.</li><br/>
 					 
 					<br/><br/>
 					</ol>
@@ -204,15 +214,27 @@
 				
 				<div class="p-2 " >
 				 <div class="dropdown">
+					<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Select test object <span class="caret"></span></button>
+					<ul class="dropdown-menu">
+					  <li><a onclick = "changeImg1()">One side taper</a></li>
+					  <li><a onclick = "changeImg2()">V block</a></li>
+					</ul>
+				  </div></div>				
+				
+				
+				
+				<div class="p-2 " >
+				 <div class="dropdown">
 					<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Choose object position on sinebar
 					<span class="caret"></span></button>
 					<ul class="dropdown-menu">
 					  <li><a onclick = "MoveobjL()">Left</a></li>
 					  <li><a onclick = "MoveobjR()">Right</a></li>
 					</ul>
-				  </div><br/>
+				  </div></div>
+				  <div class="p-2 " >
 				   <div class="dropdown">
-					<button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Add Slip Gauge Height(H)(mm)
+					<button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Add slip gauge height(H)(mm)
 					</button>
 					<ul class="dropdown-menu">
 					  <li><a onclick = "ch1();Simulate();autoUpdateChart()">0.5</a></li>
@@ -226,21 +248,23 @@
 					  <li><a onclick = "ch7();Simulate();autoUpdateChart()">50</a></li>
 					  
 					</ul>
-				  </div><br/>
+				  </div></div></div>
+				  
+				  <br/>
 				  <!--<label for="customRange3" class="form-label">Add Height (H)</label>
 					<input type="range" class="form-range" min="0" max="70" step="0.5" value = "0" onchange = "Simulate();autoUpdateChart()"id="customRange">
 					-->Total Height of Slip Gauges (mm):<input type="number" id = "hvalue" value = "0"  style="width:20%;text-align:center;" readonly=readonly >
 					
 					<input type="number" id = "hvseudo" value = "0" min="0" max="10"  style="width:20%;text-align:center;visibility:hidden" readonly=readonly >
-				</div>
+				<br/><br/>
 				
-			<div class="p-2 " >	
+			
 			<button type="button" onclick="CreateTable()" class="btn btn-primary" >Add to Table</button>
 			<button type="button" onclick="calibrate()" class="btn btn-success" >calibrate</button>
 			<button type="button" onclick="removeH()" class="btn btn-primary" >Remove slip gauge</button>
 			<button type="button" id="refresh" onclick="Refresh()" class="btn btn-danger" >Clear</button>
-			</div>	
-			</div>
+			
+			<input type="number" id = "chkobj" value = "2" min="1" max="2"  style="width:20%;text-align:center;visibility:hidden" readonly=readonly >
 		</div>
 			<div class="col-md-1" ></div>		
 			<!---end of 1st col under 1st row--->	
