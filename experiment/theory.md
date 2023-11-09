@@ -22,7 +22,7 @@ As shown in the figure.
 
 2. Workpiece Clamping: To measure the taper of a workpiece using a sine bar, the workpiece is securely clamped at the center of the sine bar, ensuring that the taper to be measured rests on the flat surface of the sine bar.
 
-3. Height Adjustment: The sine bar needs to be set up so that its upper and lower ends are parallel to the workpiece's taper. This is achieved by placing various slip gauges of known length under one end of the sine bar. The height of these slip gauges is carefully chosen to ensure parallelism.
+3. Height Adjustment: The sine bar needs to be set up so that its upper and lower ends are parallel to the workpiece's taper. This is achieved by placing various slip gauges of known length under one end of the sine bar. The height of these slip gauges is carefully chosen to ensure parallelism. The complete contact between the slip gauges is done by wringing. Wringing is done by hand by sliding and twisting motions.  One gauge is placed perpendicular to the other using standard gauging pressure, and then a rotary motion is applied until the blocks are lined up.  In this way air is expelled from between the gauge faces, causing the blocks to adhere.
 
 <div align="center">
 <img class="img-fluid"  src="./images/img2.jpeg" alt=""><br>           
