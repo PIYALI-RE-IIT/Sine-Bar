@@ -1,9 +1,9 @@
 ## Procedure
 
-**Schematic of the Plant**
+<!-- **Schematic of the Plant**
 <div align="center">
 <img class="img-fluid"  src="./images/plant.png" alt=""><br>           
-</div>
+</div> -->
 
 
 **Steps to perform the simuation**
