@@ -225,7 +225,7 @@
 				
 				<div class="p-2 " >
 				 <div class="dropdown">
-					<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Choose object position on sinebar
+					<button class="btn btn-secondary dropdown-toggle" type="button" id="dbtn" data-bs-toggle="dropdown" aria-expanded="false">Choose object position on sinebar
 					<span class="caret"></span></button>
 					<ul class="dropdown-menu">
 					  <li><a onclick = "MoveobjL()">Left</a></li>
@@ -337,7 +337,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
 	
     <script>
-	
+	 
 	
     const data = {
       labels: ['50', '50'],
@@ -461,38 +461,15 @@ nValue = math.add(50,dialtheta);
 myChart.data.datasets[0].needleValue = nValue;
 document.getElementById('dial').value = nValue;
 }
-else if(math.round(dialtheta)==30){
+else if(math.floor(dialtheta)==30){
+myChart.data.datasets[0].data[0] = 50;
+myChart.data.datasets[0].data[1] = 50;
  myChart.data.datasets[0].needleValue = 50;
  document.getElementById('dial').value = 0;
  
  stopUpdate();
  }
 
- 
- /*if(nValue < 30){///loading
- nValue--;
- myChart.data.datasets[0].needleValue = nValue;
- document.getElementById('dial').value = nValue = math.subtract(50,math.round(dialtheta));
- }
- 
- if(nValue > 30 ){
- nValue++;
- 
- myChart.data.datasets[0].data[0] = nValue;
- myChart.data.datasets[0].needleValue = nValue;
- document.getElementById('dial').value = math.add(50,math.round(dialtheta));
- 
- }
- 
- else if(math.round(nValue) == math.round(30)){
- myChart.data.datasets[0].needleValue = 50;
- document.getElementById('dial').value = 0;
- 
- stopUpdate();
- }*/
- 
- //myChart.data.datasets[0].data.push(50);///push array[0] value in chart 
- //chart.data.datasets[0].backgroundColor.push("green");///change a particular data background color
   
  myChart.update();///to show gauge pressure in indicated value
  
@@ -506,10 +483,6 @@ else if(math.round(dialtheta)==30){
  
  }
  
- //setTimeout(stopWheel, 5000);///to stop the wheel rotation after reaching indicated value pressure
-//setTimeout(piston_positionUp, 5000);///piston will pop up after reaching the indicated pressure value
- //setTimeout(stopUpdate, 5000);
- //}
  
  ///stop the Pressure Gauge whenever required
  function stopUpdate(){
@@ -519,68 +492,9 @@ else if(math.round(dialtheta)==30){
  //}
  
  }
-    // Instantly assign Chart.js version
-    //const chartVersion = document.getElementById('chartVersion');
-   // chartVersion.innerText = Chart.version;
-    </script>
-
-<!--------------------------------------------------------GAUGE CHART USING CHART JS GENERAL--------------------------------------->	
-	
- <!--<script>
- 
- let ctx = document.getElementById("gaugechart").getContext('2d');
- let chart = new Chart(ctx, {
- 
- ///the type of chart we want to create
- type:'doughnut',
- 
- data: {
- 
- labels: ["january","feb","jun"],
- 
- ///the data for our dataset
- datasets: [{
- 
-		label:"Pressure Gauge",
-		backgroundColor: ['red','green','aqua'],
-		borderColor:['red','green','aqua'],
-		data:[3,5,10],
-		
-		}] 
- 
- },
- 
- ///configuration options go here
- options:{
-	legend:{
-	
-	display:false
-	
-	},
-	
-	circumference: 1*Math.PI,
-	rotation: 1*Math.PI,
-	cutoutPercentage:90
- 
- }
- 
- });
- 
- function updateChart(){
- 
- //chart.data.datasets[0].data = [20,5,10];///pushing a new value to an array of data
- chart.data.datasets[0].data.push(50);///push array[0] value in chart
- chart.data.datasets[0].backgroundColor.push("green");///change a particular data background color
- 
- 
- chart.update();
- 
- }
- 
- chart.update();
- </script> --> 
+    
+</script>
 
 </body><!--body tag end-->
 
- 
-</html><!--html tag end -->
+</html><!-- html tag end -->

@@ -30,6 +30,7 @@ document.getElementById('obj').src = "images/testobj3.png";
 document.getElementById('obj').style.width = 13 +"%";
 document.getElementById('obj').style.left = 24.2 +"%";
 document.getElementById('obj').style.top = -8 +"%";
+document.getElementById('dbtn').disabled = true;
 }
 
 function changeImg2(){
@@ -38,7 +39,8 @@ document.getElementById('chkobj').value = 2;
 document.getElementById('obj').src = "images/testobj2.png";	
 document.getElementById('obj').style.width = 35 +"%";
 document.getElementById('obj').style.left = 15.2 +"%";
-document.getElementById('obj').style.top = -18 +"%";	
+document.getElementById('obj').style.top = -18 +"%";
+document.getElementById('dbtn').disabled = false;	
 }
 
 ///object movement
